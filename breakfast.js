@@ -2,7 +2,7 @@ const recipes = [
     {
         id: 1,
         name: "Classic Pancakes",
-        image: "breakfast/classic-pancakes.jpg",
+        image: "Breakfast/classic-pancakes.jpg",
         ingredients: [
             "1 cup all-purpose flour",
             "1 tablespoon sugar",
@@ -23,7 +23,7 @@ const recipes = [
     {
         id: 2,
         name: "Avocado Toast",
-        image: "breakfast/avocado-toast.jpg",
+        image: "Breakfast/avocado-toast.jpg",
         ingredients: [
             "2 slices whole-grain bread",
             "1 ripe avocado",
@@ -40,7 +40,7 @@ const recipes = [
     {
         id: 3,
         name: "Oatmeal with Fruits",
-        image: "breakfast/oatmeal-fruits.jpg",
+        image: "Breakfast/oatmeal-fruits.jpg",
         ingredients: [
             "1 cup rolled oats",
             "2 cups milk or water",
@@ -57,7 +57,7 @@ const recipes = [
     {
         id: 4,
         name: "Scrambled Eggs",
-        image: "breakfast/scrambled-eggs.jpg",
+        image: "Breakfast/scrambled-eggs.jpg",
         ingredients: [
             "2 eggs",
             "1 tablespoon milk",
@@ -73,7 +73,7 @@ const recipes = [
     {
         id: 5,
         name: "Smoothie Bowl",
-        image: "breakfast/smoothie-bowl.jpg",
+        image: "Breakfast/smoothie-bowl.jpg",
         ingredients: [
             "1 frozen banana",
             "1 cup frozen berries",
@@ -89,7 +89,7 @@ const recipes = [
     {
         id: 6,
         name: "Breakfast Burrito",
-        image: "breakfast/breakfast-burrito.jpg",
+        image: "Breakfast/breakfast-burrito.jpg",
         ingredients: [
             "1 large tortilla",
             "2 scrambled eggs",
@@ -106,7 +106,7 @@ const recipes = [
     {
         id: 7,
         name: "Banana Bread",
-        image: "breakfast/banana-bread.jpg",
+        image: "Breakfast/banana-bread.jpg",
         ingredients: [
             "2 ripe bananas",
             "1/2 cup sugar",
@@ -125,7 +125,7 @@ const recipes = [
     {
         id: 8,
         name: "Greek Yogurt Parfait",
-        image: "breakfast/yogurt-parfait.jpg",
+        image: "Breakfast/yogurt-parfait.jpg",
         ingredients: [
             "1 cup Greek yogurt",
             "1/2 cup granola",
@@ -141,7 +141,7 @@ const recipes = [
     {
         id: 9,
         name: "Peanut Butter Toast",
-        image: "breakfast/peanut-butter-toast.jpg",
+        image: "Breakfast/peanut-butter-toast.jpg",
         ingredients: [
             "2 slices whole-grain bread",
             "2 tablespoons peanut butter",
@@ -156,7 +156,7 @@ const recipes = [
     {
         id: 10,
         name: "Spinach and Cheese Omelette",
-        image: "breakfast/spinach-cheese-omelette.jpg",
+        image: "Breakfast/spinach-cheese-omelette.jpg",
         ingredients: [
             "2 eggs",
             "1/4 cup shredded cheese",
@@ -173,7 +173,7 @@ const recipes = [
     {
         id: 11,
         name: "Chia Seed Pudding",
-        image: "breakfast/chia-pudding.jpg",
+        image: "Breakfast/chia-pudding.jpg",
         ingredients: [
             "1/4 cup chia seeds",
             "1 cup milk or plant-based milk",
@@ -189,7 +189,7 @@ const recipes = [
     {
         id: 12,
         name: "Breakfast Sandwich",
-        image: "breakfast/breakfast-sandwich.jpg",
+        image: "Breakfast/breakfast-sandwich.jpg",
         ingredients: [
             "1 English muffin",
             "1 fried egg",
@@ -205,7 +205,7 @@ const recipes = [
     {
         id: 13,
         name: "Apple Cinnamon Overnight Oats",
-        image: "breakfast/apple-cinnamon-oats.jpg",
+        image: "Breakfast/apple-cinnamon-oats.jpg",
         ingredients: [
             "1/2 cup rolled oats",
             "1/2 cup milk or plant-based milk",
@@ -222,7 +222,7 @@ const recipes = [
     {
         id: 14,
         name: "Vegetable Frittata",
-        image: "breakfast/vegetable-frittata.jpg",
+        image: "Breakfast/vegetable-frittata.jpg",
         ingredients: [
             "3 eggs",
             "1/4 cup diced vegetables (bell peppers, onions, spinach)",
@@ -238,7 +238,7 @@ const recipes = [
     {
         id: 15,
         name: "Breakfast Muffins",
-        image: "breakfast/breakfast-muffins.jpg",
+        image: "Breakfast/breakfast-muffins.jpg",
         ingredients: [
             "1 cup whole wheat flour",
             "1/2 teaspoon baking soda",
