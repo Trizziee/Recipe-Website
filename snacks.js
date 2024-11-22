@@ -389,6 +389,17 @@ function displayRecipes(recipes) {
         link.appendChild(image);
         imageContainer.appendChild(link);
         card.appendChild(imageContainer);
+
+        // Add recipe name
+        const title = document.createElement("p");
+        title.className = "recipe-title";
+        title.textContent = recipe.name;
+        card.appendChild(title);
+  
+        // Append card to container
+        container.appendChild(card);
+    });
+  }
   /**
   * Retrieves a recipe by ID from the URL.
   * @param {Array} recipes - The array of recipe objects.
