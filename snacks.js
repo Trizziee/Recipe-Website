@@ -458,13 +458,4 @@ function displayRecipes(recipes) {
         }
     }
   });
-        // Add recipe name
-        const title = document.createElement("p");
-        title.className = "recipe-title";
-        title.textContent = recipe.name;
-        card.appendChild(title);
-  
-        // Append card to container
-        container.appendChild(card);
-    });
-  }
+        
