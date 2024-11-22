@@ -280,3 +280,74 @@ function displayRecipes(recipes) {
       container.appendChild(card);
   });
 }
+This is for drinks 
+
+/**
+* Retrieves a recipe by ID from the URL.
+* @param {Array} recipes - The array of recipe objects.
+* @returns {Object|null} - The matched recipe or null if not found.
+*/
+function getRecipeFromUrl(recipes) {
+  const params = new URLSearchParams(window.location.search);
+  const id = parseInt(params.get("id"));
+  return recipes.find(recipe => recipe.id === id) || null;
+}
+
+/**
+* Displays the details of a single recipe.
+* @param {Object} recipe - The recipe object to display.
+*/
+function displayRecipeDetails(recipe) {
+  const detailContainer = document.getElementById("recipe-detail");
+  if (!detailContainer) return;
+
+  detailContainer.innerHTML = ""; // Clear existing content
+
+  // Create title
+  const title = document.createElement("h1");
+  title.textContent = recipe.name;
+
+  // Create image
+  const image = document.createElement("img");
+  image.src = recipe.image;
+  image.alt = recipe.name;
+  image.className = "detail-image";
+
+  // Create ingredients section
+  const ingredientsHeader = document.createElement("h2");
+  ingredientsHeader.textContent = "Ingredients";
+  const ingredientsList = document.createElement("ul");
+  recipe.ingredients.forEach(ingredient => {
+      const listItem = document.createElement("li");
+      listItem.textContent = ingredient;
+      ingredientsList.appendChild(listItem);
+  });
+
+  // Create instructions section
+  const instructionsHeader = document.createElement("h2");
+  instructionsHeader.textContent = "Instructions";
+  const instructions = document.createElement("p");
+  instructions.textContent = recipe.instructions.join(" ");
+
+  // Append all elements
+  detailContainer.appendChild(title);
+  detailContainer.appendChild(image);
+  detailContainer.appendChild(ingredientsHeader);
+  detailContainer.appendChild(ingredientsList);
+  detailContainer.appendChild(instructionsHeader);
+  detailContainer.appendChild(instructions);
+}
+
+// Initialize event listeners
+document.addEventListener("DOMContentLoaded", () => {
+  if (document.getElementById("recipe-container")) {
+      displayRecipes(recipes); // Display recipe list if on main page
+  } else if (document.getElementById("recipe-detail")) {
+      const recipe = getRecipeFromUrl(recipes);
+      if (recipe) {
+          displayRecipeDetails(recipe);
+      } else {
+          document.getElementById("recipe-detail").textContent = "Recipe not found!";
+      }
+  }
+});
