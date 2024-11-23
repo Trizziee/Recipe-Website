@@ -280,7 +280,7 @@ function displayRecipes(recipes) {
       container.appendChild(card);
   });
 }
-This is for drinks 
+ 
 
 /**
 * Retrieves a recipe by ID from the URL.
