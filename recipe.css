@@ -104,3 +104,58 @@ p {
     transform: rotateY(180deg); /* Make back initially hidden */
     
   }
+
+
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(239, 174, 174);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(249, 130, 130);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.search {
+    margin-left: auto;
+    padding: 5px;
+}
+
+.hero {
+    margin-top: 5px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100vh; 
+    background: url(Breakfast/classic-pancakes.jpg) center/cover no-repeat;  
+}
+  
+.hero-overlay {
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 3px;
+    margin: 100px;
+    position:absolute;
+}
