@@ -260,7 +260,7 @@ function displayRecipes(recipes) {
 
       // Add recipe image with a link
       const link = document.createElement("a");
-      link.href = drinks1.html?id=${recipe.id};
+      link.href = `drinks1.html?id=${recipe.id}`;
 
       const image = document.createElement("img");
       image.src = recipe.image;
