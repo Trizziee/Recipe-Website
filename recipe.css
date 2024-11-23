@@ -203,6 +203,81 @@ p {
     height: 100vh; 
     background: url(breakfast/classic-pancakes.jpg) center/cover no-repeat;  
 }
+.contact-us {
+    max-width: 800px;
+    background-color:burlywood;
+    padding: 20px;
+    border-radius: 8px;
+    align-content: center;
+    display: block;
+    margin: 20px auto;
+    align-items: center;
+}
+
+.contact-us h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    margin: auto;  
+}
+
+.contact-us p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+    align-content: center;
+    margin: auto;
+    text-align: center;
+}
+
+.contact-form label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+    align-content: center;
+    margin: auto;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 60%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    margin: auto;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    width: 20%;
+    padding: 12px;
+    background-color:rgb(116, 67, 67);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+    
+}
+
+.contact-form button:hover {
+    background-color:darkseagreen;
+}
+
   
 .hero-overlay {
     text-align: center;
