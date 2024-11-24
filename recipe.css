@@ -334,4 +334,37 @@ p {
     width: 300px;
     padding: 20px;
 }
+.container1{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 0 20px;
+    max-width: 1200px;
+    justify-content: center;
+}
+
+.team{
+    text-align: center;
+    padding: 10px;
+    background-color:burlywood;
+    border-radius: 10px;
+    position: relative;
+}
+
+.team img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    border-color: #172c66;
+}
+#recipe-container {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 20px;
+    position: relative;
+    align-items: center;
+    justify-items: center;
+}
 
