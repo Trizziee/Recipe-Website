@@ -280,7 +280,7 @@ p {
     justify-content: center;
     position: relative;
     height: 100vh; 
-    background: url(Breakfast/classic-pancakes.jpg) center/cover no-repeat;  
+    background: url(breakfast/classic-pancakes.jpg) center/cover no-repeat;  
 }
   
 .hero-overlay {
