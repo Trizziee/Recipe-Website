@@ -1,3 +1,60 @@
+* {
+    text-decoration: none;
+}
+body {
+    line-height: 2.0;
+    background-color:antiquewhite;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;  
+}
+
+p {
+    font-size: large;
+    font-weight: 500;
+    font-family:Palatino Linotype ;
+}
+
+.navbar {
+    font-family:Cooper Black ;
+    display: flex;
+    justify-content: space-between;
+    padding: .1rem;
+    align-items: center;
+    background-color: rgb(184, 95, 95);
+    margin: 0px;   
+}
+
+.navbar a:hover {
+    color: #172c66;
+}
+
+.logo {
+    font-family: Stencil;
+    font-size: x-large;
+    font-weight: 1000;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+    padding-left: 50px;
+}
+
+.nav-links a {
+    color: #fef6e4;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.nav-links a:hoover {
+    background-color: burlywood
+}
+
 .contact-us {
     max-width: 800px;
     background-color:burlywood;
@@ -8,6 +65,49 @@
     margin: 20px auto;
     align-items: center;
 }
+
+.card1-container {
+    perspective: 1000px; /* Enables 3D effect */
+    display:inline-block;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 55px;
+  }
+  
+  .card1 {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    transform-style: preserve-3d; /* Preserves 3D for children */
+    transition: transform 1.5s ease; /* Smooth flip transition */
+    align-items: center; 
+  }
+  
+  .card1-container:hover .card1 {
+    transform: rotateY(180deg); /* Flip on hover */
+  }
+  
+  .card1-front, .card1-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hides the back when facing front */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  
+ .card1-front {
+    background-color: #ffe5b4; /* Front side color */
+  }
+  .card1-back {
+    background-color: #f8d7da; /* Back side color */
+    transform: rotateY(180deg); /* Make back initially hidden */    
+  }
 
 .contact-us h1 {
     font-size: 24px;
@@ -86,24 +186,6 @@
     object-fit: cover; /* Ensure the image covers the area without distortion */
 }
 
-.recipe-title {
-    font-size: larger;
-    color: #333;
-    margin: 10px 0;
-    padding: 0 10px;
-    font-weight: normal;
-}
-
-#recipe-detail {
-    background-color:rgb(246, 220, 107);
-    padding: 3px;
-    margin:0 150px;
-    border-radius: 8px;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-}
-
 #recipe-detail img {
     max-width: 100%;
     border-radius: 8px;  
@@ -119,12 +201,6 @@
     text-align: center;
     font-size: 30px;
     margin-top: 20px;
-    color: #333;
-}
-
-#recipe-detail ul {
-    list-style-type:none;
-    text-align: center;
     color: #333;
 }
 
@@ -151,11 +227,6 @@
     text-align: center;
 }
 
-#recipe-detail img {
-    max-width: 100%;
-    border-radius: 8px;
-}
-
 #recipe-detail h2 {
     text-align: center;
     font-size: 10px;
@@ -169,4 +240,98 @@
     color: #333;
 }
 
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(239, 174, 174);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(249, 130, 130);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.search {
+    margin-left: auto;
+    padding: 5px;
+}
+
+.hero {
+    margin-top: 5px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100vh; 
+    background: url(Breakfast/classic-pancakes.jpg) center/cover no-repeat;  
+}
+  
+.hero-overlay {
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 3px;
+    margin: 100px;
+    position:absolute;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #a55e32;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+.h2{
+    text-align: center;
+    margin: 30px auto;
+}
+
+.h2 h2 {
+    color: rgb(120, 103, 11);
+    font-size: 36px;
+    display: inline-block;
+    position: relative;
+}
+
+.card {
+    background-color:bisque;
+    border: 1px solid goldenrod;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    width: 300px;
+    padding: 20px;
+}
 
