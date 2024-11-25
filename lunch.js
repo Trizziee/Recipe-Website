@@ -27,7 +27,7 @@ const recipes = [
     {
         id :2,
         "name": "BBQ Sheet-Pan Chicken",
-        "image" : "lunch/BBQ Sheet-pan chicken.jpg",
+        "image" : "lunch/BBQ Sheet-pan Chicken.jpg",
         "ingredients": [
         "2 medium sweet potatoes (about 8 oz.), scrubbed, cut into 1\" chunks",
         "2 Tbsp. plus 1 1/2 tsp. extra-virgin olive oil, divided",
