@@ -15,34 +15,33 @@ p {
 
 
 .navbar {
-    font-family:Cooper Black ;
+    font-family:Mongolian Baiti black ;
     display: flex;
     justify-content: space-between;
-    padding-top: 0rem;
-    padding-bottom: 1rem ;
+    padding: .1rem;
     align-items: center;
     background-color: rgb(184, 95, 95);
-    margin-bottom: 2px; 
-    top:0rem;
-    height: 75px;
-    font-size:30px;
-    margin-bottom: 2px;
-    
-    
-    
+    margin-bottom: 2px; 
+    padding-top: 0rem;
+    padding-bottom: 1rem;
+    height: 85px ;
+    font-size: 20px;
+    top: 0;
     
 }
+    
 .navbar a:hover {
     color: #172c66;
 }
 
 .logo {
-    font-family:Edwardian Script ITC;
-    font-size: 100px;
+    font-family: Edwardian Script ITC;
+    font-size: 50px;
     font-weight: 1000;
     font-weight: bolder;
     text-decoration: none;
 }
+
 
 .nav-links {
     display: flex;
