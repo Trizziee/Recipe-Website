@@ -3,7 +3,8 @@ Recipe Website 🍴
 Welcome to the Recipe Website! This project is a simple and elegant website designed to showcase delicious recipes in an organized and visually appealing format.
 🌐 Live Demo
 
-Visit the website here: Recipe Website
+Visit the website here: https://trizziee.github.io/Recipe-Website/
+
 📖 About
 
 The Recipe Website was created to make cooking inspiration easily accessible. It features a clean layout with a hero section, recipe categories, and easy navigation for food enthusiasts.
