@@ -13,16 +13,22 @@ p {
     font-family:Palatino Linotype ;
 }
 
+
 .navbar {
-    font-family:Cooper Black ;
+    font-family:Mongolian Baiti grey ;
     display: flex;
     justify-content: space-between;
     padding: .1rem;
     align-items: center;
-    background-color: rgb(184, 95, 95);
-    margin: 0px;   
+    background-color:white ;
+    margin-bottom: 2px; 
+    padding-top: 0rem;
+    padding-bottom: 1rem;
+    height: 85px ;
+    font-size: 30px;
+    top: 0;
+    
 }
-
 .navbar a:hover {
     color: #172c66;
 }
